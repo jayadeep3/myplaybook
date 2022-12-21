@@ -1,0 +1,3 @@
+<tomcat-users>
+	<user username="jayadeep" password="jayadeep" roles="manager-script"/>
+</tomcat-users>

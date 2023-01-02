@@ -1,0 +1,6 @@
+---
+- name: Edit the indes.html file
+  copy:
+    content: "jayadeep"
+    dest: /var/www/html/index.html
+...

@@ -1,0 +1,13 @@
+---
+- name: Change password of an existing user
+  hosts: all
+  tasks:
+    - name: Check for user
+      shell: grep sai /etc/passwd
+      register: a
+    - name: Change the password
+      user:
+        name: sai
+        password: jayadeep
+      when: a.changed == true
+...
